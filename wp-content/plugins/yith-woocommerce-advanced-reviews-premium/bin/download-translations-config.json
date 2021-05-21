@@ -1,0 +1,46 @@
+{
+  "projectPath": "https://translate.yithemes.com/gp/projects/yith-woocommerce-advanced-reviews/",
+  "textDomain": "yith-woocommerce-advanced-reviews",
+  "destFolder": "languages/",
+  "languages": [
+    {
+      "id": "es",
+      "name": "Spanish",
+      "slug": "es_ES"
+    },
+    {
+      "id": "fr",
+      "name": "French",
+      "slug": "fr_FR"
+    },
+    {
+      "id": "it",
+      "name": "Italian",
+      "slug": "it_IT"
+    },
+    {
+      "id": "nl",
+      "name": "Dutch",
+      "slug": "nl_NL"
+    },
+    {
+      "id": "el",
+      "name": "Greek",
+      "slug": "el"
+    },
+    {
+      "id": "de",
+      "name": "German",
+      "slug": "de_DE"
+    },
+    {
+      "id": "pt",
+      "name": "Portuguese (Portugal)",
+      "slug": "pt_PT"
+    },{
+      "id": "sl",
+      "name": "Slovenian",
+      "slug": "sl_SI"
+    }
+  ]
+}

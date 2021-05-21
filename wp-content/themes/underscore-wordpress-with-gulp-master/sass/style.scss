@@ -1,0 +1,361 @@
+/*!
+Theme Name: Shop theme
+Theme URI: http://underscores.me/
+Author: Vladimir
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: my_shop
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Shop theme is based on Underscores https://underscores.me/, (C) 2012-2020 Automatic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+@import "utilities/alignments";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat'), url('./fonts/montserrathairline.woff2') format('woff2'), url('./fonts/montserrathairline.woff') format('woff'),
+  url('./fonts/montserrathairline.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('./fonts/montserratlight.woff2') format('woff2'), url('./fonts/montserratlight.woff') format('woff'), url('./fonts/montserratlight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: local('Montserrat'), local('Montserrat-Regular'), url('./fonts/montserrat.woff2') format('woff2'), url('./fonts/montserrat.woff') format('woff'), url('./fonts/montserrat.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('./fonts/montserratbold.woff2') format('woff2'), url('./fonts/montserratbold.woff') format('woff'), url('./fonts/montserratbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Black';
+  src: local('Montserrat Black'), local('Montserrat-Black'), url('./fonts/montserratblack.woff2') format('woff2'), url('./fonts/montserratblack.woff') format('woff'), url('./fonts/montserratblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+body{
+  background-color: #ffffff;
+}
+$main_color: #EEF5F6;
+header {
+  background-color: $main_color;
+  .top-head {
+    background-color: #1A1818;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+  .site-description{
+    /* Caption2_10_Regular */
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    /* or 130% */
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 88%;
+    text-align: center;
+  }
+    a.special-offers{
+      /* Button_15_Semibold */
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      padding: 0 5px;
+      /* or 147% */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      /* Main_Tertiary_Color */
+      color: #CDDDE2;
+    }
+    a.close{
+      padding: 0 5px;
+      span:first-child {
+      /* Vector 17 */
+      position: absolute;
+      width: 14.32px;
+      height: 0px;
+      /* Main_Tertiary_Color */
+      border: 1.8px solid #CDDDE2;
+      transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+      top: 45px;
+    }
+    span:last-child {
+      /* Vector 16 */
+      position: absolute;
+      width: 14.32px;
+      height: 0px;
+      /* Main_Tertiary_Color */
+      border: 1.8px solid #CDDDE2;
+      transform: rotate(45deg);
+      top: 45px;
+    }
+    }
+  }
+  .middle-head{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 17px 30px 14px 40px;
+    #left-part{
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      a.phone-number{
+        text-decoration: none;
+        /* +123 456 78 90 */
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        /* Label_Color */
+        color: #1A1818;
+      }
+      #search-form{
+        border: 1.2px solid #9BAAAE;
+        border-radius: 6px;
+        /* Hint_16_light */
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        /* identical to box height, or 112% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #9BAAAE;
+      }
+    }
+
+    #right-part{
+display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      button#cart{
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        padding: 0;
+        /* Button */
+        width: 127px;
+        height: 44px;
+        /* Main_Tertiary_Color */
+        background: #CDDDE2;
+        border-radius: 4px;
+      }
+      button#login{
+        /* Button */
+        width: 100%;
+        max-width: 127px;
+        height: 100%;
+        max-height: 44px;
+        margin-left: 15px;
+        /* Main_Tertiary_Color */
+        background: #CDDDE2;
+        border-radius: 4px;
+        /* log IN */
+
+        /* Linked_text_15_semibold */
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 27px;
+        /* or 180% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        padding: 0 0 0 19px;
+      }
+    }
+  }
+  nav{
+    background: #fff;
+    border-bottom: 1px solid #C4C4c4;
+    padding: 19px 65px 19px 49px;
+    ul#header-menu{
+      justify-content: space-around;
+      >li{
+        width: 100%;
+        >a{
+        /* Button_15_Semibold */
+        font-family: Montserrat Bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        /* or 133% */
+        //display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+
+        /* Label_Color */
+        color: #1A1818;
+      }
+    }
+    }
+  }
+}
+main{
+
+  .main-header{
+    /* Rectangle 1 */
+    /* Main_Secondary_Color */
+    padding-top: 50px;
+    background: #EEF5F7;
+    height: 100%;
+    min-height: 250px;
+    .popular-title{
+    margin-left: 17%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .hor-line{
+      width: 40px;
+      height: 2px;
+      background-color: #EC3C24;
+      margin-right: 28px;
+    }
+    label{
+      /* Title1_28_Regular */
+      font-family: Montserrat Bold, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 34px;
+      /* identical to box height, or 121% */
+
+      /* Label_Color */
+      color: #1A1818;
+      //border: 1px solid #000000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+  .popular-products-slider
+  {
+    list-style-type: none;
+  >li {
+    background-color: #fff;
+    width: max-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  }
+}

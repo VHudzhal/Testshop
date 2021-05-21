@@ -1,0 +1,32 @@
+{
+  "name": "yith-woocommerce-advanced-reviews-premium",
+  "version": "1.6.19",
+  "description": "YITH WooCommerce Advanced Reviews Premium",
+  "scripts": {
+    "build": "npm run -s i18n && npm run -s js",
+    "build-zip": "cross-env ./bin/build-zip.sh",
+    "build-zip:package": "node ./bin/build-zip-package.js",
+    "js": "grunt js",
+    "i18n": "npm run -s i18n:build && npm run -s i18n:translations",
+    "i18n:build": "grunt makepot",
+    "i18n:translations": "npm run -s i18n:download-translations && npm run -s i18n:update-po && npm run -s i18n:clean",
+    "i18n:download-translations": "node ./bin/download-translations.js",
+    "i18n:update-po": "grunt update_po",
+    "i18n:clean": "node ./bin/clean-language-files.js",
+    "changelog": "node ./bin/changelog.js"
+  },
+  "author": "YITH",
+  "license": "GPL-3.0+",
+  "keywords": [],
+  "devDependencies": {
+    "archiver": "^5.2.0",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "fs-extra": "^9.1.0",
+    "grunt": "^1.3.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-wp-i18n": "^1.0.3",
+    "promptly": "^3.2.0"
+  }
+}
