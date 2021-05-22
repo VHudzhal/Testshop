@@ -1,0 +1,1 @@
+<img src="<?php echo esc_attr( $this->image ); ?>" class="ewd-urp-review-image" />
