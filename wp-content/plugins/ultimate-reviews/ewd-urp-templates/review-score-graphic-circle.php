@@ -1,1 +1,0 @@
-<canvas width='50' height='50' class='ewd-urp-review-graphic ewd-urp-pie-graphic ewd-urp-small-pie' data-reviewscore='<?php echo $this->score; ?>'></canvas>

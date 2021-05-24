@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test-products-database" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wp-content/plugins/ewd-premium-helper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wp-content/themes/myshop" vcs="Git" />
   </component>
 </project>
