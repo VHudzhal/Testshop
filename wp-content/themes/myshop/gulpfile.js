@@ -130,7 +130,7 @@ gulp.task('js', function() {
 
 // Images
 gulp.task('images', function() {
-    return gulp.src('./images/src/*')
+    return gulp.src('./images/*')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(imagemin({ optimizationLevel: 7, progressive: true }))
         .pipe(gulp.dest('./images/dist'));

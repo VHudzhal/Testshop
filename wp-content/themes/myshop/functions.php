@@ -166,7 +166,7 @@ function my_shop_scripts() {
 	wp_style_add_data( 'myshop-style', 'rtl', 'replace' );
     wp_enqueue_style( 'slick', get_template_directory_uri().'/src/slick.css', array(), _S_VERSION );
     wp_enqueue_style( 'slick-theme', get_template_directory_uri().'/src/slick-theme.css', array(), _S_VERSION );
-   //wp_enqueue_style( 'bootstrap', get_stylesheet_uri().'/css/bootstrap.min.css', array(), _S_VERSION );
+   wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.min.css', array(), _S_VERSION );
    wp_enqueue_style( 'fontawesome', get_template_directory_uri().'/src/fontawesome.css', array(), _S_VERSION );
     //wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
     wp_enqueue_script( 'myshop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

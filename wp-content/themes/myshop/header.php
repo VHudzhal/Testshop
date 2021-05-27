@@ -33,7 +33,7 @@
             <p class="site-description"><?php echo $myshop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
             <?php endif; ?>
             <a href="#" class="special-offers">Special offers</a>
-            <a href="#" class="close"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Grabber.png" alt=""></a>
+            <a href="#" class="close"><img src="<?php echo get_stylesheet_directory_uri();?>/images/dist/Grabber.png" alt=""></a>
         </div>
         <div class="middle-head">
             <div class="" id="left-part">
@@ -55,9 +55,9 @@
                 ?>
             </div><!-- .site-branding -->
             <div id="right-part" class="buttons-group">
-                <button id="cart"><img class="" width="44px" src="<?php echo get_stylesheet_directory_uri();?>/images/cart-ico.png" alt="" style="">
+                <button id="cart"><img class="" width="44px" src="<?php echo get_stylesheet_directory_uri();?>/images/dist/cart-ico.png" alt="" style="">
                 </button>
-                <button id="login">Log in<img class="" width="44px" src="<?php echo get_stylesheet_directory_uri();?>/images/login-ico.png" alt="" style="">
+                <button id="login">Log in<img class="" width="44px" src="<?php echo get_stylesheet_directory_uri();?>/images/dist/login-ico.png" alt="" style="">
                 </button>
             </div>
         </div>
