@@ -1059,7 +1059,10 @@ main .main-header {
 
 main div.popular-products-slider {
   margin-top: -115px;
-  width: 100%; }
+  width: 100%;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto; }
   main div.popular-products-slider .slider-item {
     position: relative;
     width: 300px;
@@ -1071,7 +1074,9 @@ main div.popular-products-slider {
     min-height: 200px;
     background-color: yellow; }
   main div.popular-products-slider .slick-list {
-    padding: 0 !important; }
+    padding: 0 !important;
+    width: 100%;
+    max-width: 100%; }
     main div.popular-products-slider .slick-list .slick-track {
       height: 300px;
       padding: 0 5em; }

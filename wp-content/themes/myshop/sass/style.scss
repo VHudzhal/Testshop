@@ -369,6 +369,9 @@ main{
   {
     margin-top: -115px;
     width: 100%;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     .slider-item {
       position: relative;
       width: 300px;
@@ -382,6 +385,8 @@ main{
     }
     .slick-list{
       padding: 0!important;
+      width: 100%;
+      max-width: 100%;
       .slick-track{
       //transform: translate3d(0, 0, 0) !important;
       //-webkit-transform: translate3d(0, 0, 0)!important;

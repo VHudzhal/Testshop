@@ -143,9 +143,9 @@ gulp.task('watch', function() {
     //     proxy: 'http://localhost:8080/testshop/',
     // });
     gulp.watch('./sass/**/*.scss', gulp.series('sass', reload));
-//    gulp.watch('./js/*.js', gulp.series('js', reload));
+    gulp.watch('./sass/style.css', gulp.series('style', reload));
     gulp.watch('images/src/*', gulp.series('images', reload));
 });
 
 // gulp.task('default', gulp.series('sass', 'images', 'watch'));
-gulp.task('default', gulp.series('sass','style'));
+gulp.task('default', gulp.series('sass','style', 'images'));
