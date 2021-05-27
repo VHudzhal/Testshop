@@ -164,11 +164,11 @@ add_action( 'init', 'my_shop_navigation_menus' );
 function my_shop_scripts() {
 	wp_enqueue_style( 'myshop-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'myshop-style', 'rtl', 'replace' );
-   // wp_enqueue_style( 'slick', get_stylesheet_uri().'slick.css', array(), _S_VERSION );
-   // wp_enqueue_style( 'slick-theme', get_stylesheet_uri().'slick-theme.css', array(), _S_VERSION );
+    wp_enqueue_style( 'slick', get_template_directory_uri().'/src/slick.css', array(), _S_VERSION );
+    wp_enqueue_style( 'slick-theme', get_template_directory_uri().'/src/slick-theme.css', array(), _S_VERSION );
    //wp_enqueue_style( 'bootstrap', get_stylesheet_uri().'/css/bootstrap.min.css', array(), _S_VERSION );
-   //wp_enqueue_style( 'bootstrap-grid', get_stylesheet_uri().'/css/bootstrap-grid.min.css', array(), _S_VERSION );
-    wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
+   wp_enqueue_style( 'fontawesome', get_template_directory_uri().'/src/fontawesome.css', array(), _S_VERSION );
+    //wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
     wp_enqueue_script( 'myshop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'jquery-1.11', get_template_directory_uri() . '/js/jquery-1.11.0.min.js', array('jquery'), '1.11.0', true );
     wp_enqueue_script( 'jquery-3.4.1', get_template_directory_uri() . '/js/jquery-3.4.1.min.js', array('jquery'), '3.4.1', true );

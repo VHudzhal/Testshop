@@ -99,15 +99,18 @@ var onError = function( err ) {
     gutil.beep();
     this.emit('end');
 };
-
+gulp.task('style', function() {
+    return gulp.src('./sass/*.scss').
+        pipe(sass())
+        .pipe(gulp.dest('./src'));
+});
 // Sass
 gulp.task('sass', function() {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./sass/style.scss')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(gulp.dest('./'))
-        .pipe(rename('style.cssslick.css'))
         .pipe(gulp.dest('./'))
         .pipe(rtlcss())                     // Convert to RTL
         .pipe(rename({ basename: 'rtl' }))  // Rename to rtl.css
@@ -144,4 +147,5 @@ gulp.task('watch', function() {
     gulp.watch('images/src/*', gulp.series('images', reload));
 });
 
-gulp.task('default', gulp.series('sass', 'images', 'watch'));
+// gulp.task('default', gulp.series('sass', 'images', 'watch'));
+gulp.task('default', gulp.series('sass','style'));
